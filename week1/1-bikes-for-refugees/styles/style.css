@@ -13,17 +13,20 @@ body {
 
 .space-between {
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-evenly;
+	align-content: center;
+	flex-direction: row;
 }
 
-.space-between {
-	display: flex;
-	justify-content: space-between;
-}
 
 .image-size {
-	height: 100px;
+	height: 95px;
 	width: 200px;
+}
+
+.img-fluid {
+	width: 200px;
+	float: left;
 }
 
 /*  Navigation */
@@ -38,12 +41,17 @@ body {
 }
 
 .navbar-light .navbar-nav .nav-link {
-	color: #292b2c;
 	font-weight: 600;
 	text-transform: uppercase;
-
 	/*  Challenge: can you make the navigation links orange on hover? */
 }
+
+.nav-link:hover {
+	background-color: orangered;
+	/* Sin el !important no funciona el cambio de color al hacer hover */
+	color: white !important;
+}
+
 
 /* Buttons */
 button {
@@ -90,7 +98,6 @@ button {
 .jumbotron {
 	border-radius: 0;
 	background-image: url("../images/header-bike.jpg");
-	background-size: 1200px 600px;
 	background-repeat: no-repeat;
 }
 
@@ -119,6 +126,7 @@ button {
 /* Article */
 .article {
 	margin-bottom: 2em;
+	margin: 10px 10px 10px 10px;
 }
 
 .article__title {
