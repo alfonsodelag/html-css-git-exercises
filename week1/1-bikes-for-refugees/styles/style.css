@@ -68,6 +68,9 @@ button {
 	color: white;
 }
 
+.volunteer-button {
+	background-color: white;
+}
 
 /* Alert */
 .alert {
